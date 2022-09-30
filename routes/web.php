@@ -82,6 +82,9 @@ Route::group(['middleware' => ['auth']], function()
     Route::post('pin-request', [AuthenticatedSessionController::class,'pin_request']);
 
 
+    Route::get('profile', [TransactionController::class,'profile']);
+    Route::post('update-profile', [TransactionController::class,'update_prifule']);
+
 
 
     //Dashboard

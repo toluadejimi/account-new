@@ -5,7 +5,7 @@
   <!-- Main content -->
   <div class="main-content" id="panel">
   
-    <div class="header pb-6 d-flex align-items-center" style="min-height: 500px; background-image: url(../../assets/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
+    <div class="header pb-6 d-flex align-items-center" style="min-height: 500px; background-image: url({{url('')}}/public/assets/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
       <!-- Mask -->
       <span class="mask bg-gradient-default opacity-8"></span>
       <!-- Header container -->
@@ -23,7 +23,7 @@
       <div class="row">
         <div class="col-xl-4 order-xl-2">
           <div class="card card-profile">
-            <img src="../../assets/img/theme/CYBG-logo.png" alt="Image placeholder" class="card-img-top">
+            <img src="{{url('')}}/public/assets/img/theme/CYBG-logo.png" alt="Image placeholder" class="card-img-top">
             <div class="row justify-content-center">
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">

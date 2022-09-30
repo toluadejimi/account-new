@@ -21,17 +21,17 @@
   <meta name="author" content="Creative Tim">
   <title>Dashboard</title>
   <!-- Favicon -->
-  <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png">
+  <link rel="icon" href="{{url('')}}/public/assets/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
-  <link rel="stylesheet" href="../../assets/vendor/nucleo/css/nucleo.css" type="text/css">
-  <link rel="stylesheet" href="../../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="{{url('')}}/public/assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="{{url('')}}/public/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <!-- Page plugins -->
   <!-- Argon CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="../../assets/css/argon.css?v=1.1.0" type="text/css">
+  <link rel="stylesheet" href="{{url('')}}/public/assets/css/argon.css?v=1.1.0" type="text/css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="/user-dashboard">
-          <img src="../../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+          <img src="{{url('')}}/public/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->
@@ -155,7 +155,7 @@
               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="media align-items-center">
                   <span class="avatar avatar-sm rounded-circle">
-                    <img alt="Image placeholder" src="../../assets/img/theme/team-4.jpg">
+                    <img alt="Image placeholder" src="{{url('')}}/public/assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
                     <span class="mb-0 text-sm  font-weight-bold">{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</span>
@@ -369,18 +369,18 @@
   </div>
   <!-- Argon Scripts -->
   <!-- Core -->
-  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/vendor/js-cookie/js.cookie.js"></script>
-  <script src="../../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-  <script src="../../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <script src="{{url('')}}/public/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="{{url('')}}/public/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{url('')}}/public/assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="{{url('')}}/public/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="{{url('')}}/public/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
   <!-- Optional JS -->
-  <script src="../../assets/vendor/chart.js/dist/Chart.min.js"></script>
-  <script src="../../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+  <script src="{{url('')}}/public/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="{{url('')}}/public/assets/vendor/chart.js/dist/Chart.extension.js"></script>
   <!-- Argon JS -->
-  <script src="../../assets/js/argon.js?v=1.1.0"></script>
+  <script src="{{url('')}}/public/assets/js/argon.js?v=1.1.0"></script>
   <!-- Demo JS - remove this in your project -->
-  <script src="../../assets/js/demo.min.js"></script>
+  <script src="{{url('')}}/public/assets/js/demo.min.js"></script>
 </body>
 
 </html>

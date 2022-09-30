@@ -16,7 +16,7 @@
         <div class="row">
           <div class="col-lg-7 col-md-3">
             <h1 class="display-2 text-white">Hello {{ Auth::user()->first_name  }}</h1>
-            <p class="text-white mt-0 mb-7">Clydesdale Transfer. Send Money to Family and Friends, Enjoy Swift and Safe transfer service.</p>
+            <p class="text-white mt-0 mb-7">Profile Settings. Update your password. Please use a strong password.</p>
           </div>
         </div>
       </div>
@@ -116,13 +116,18 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">Transfer</h3>
+                  <h3 class="mb-0">My Account</h3>
                 </div>
 
                 
                
               </div>
             </div>
+
+ 
+            
+      
+            <div class="card-body">
 
             @if ($errors->any())
                                     <div class="alert alert-danger">
@@ -143,70 +148,84 @@
                                         {{ session()->get('error') }}
                                     </div>
                                 @endif
-            
-      
-            <div class="card-body">
-                <h6 class="heading-small text-muted mb-4">Transaction Information</h6>
-            <form method="POST" action="/local-transfer-now" class="pt-3">
+
+
+
+                <h6 class="heading-small text-muted mb-4">Change Password</h6>
+        <form method="POST" action="/contact-now" class="pt-3">
                     @csrf
-                <div class="pl-lg-4">
-                  <div class="row">
+            <div class="pl-lg-4">
+                <div class="row">
                     <div class="col-lg-6">
-                      <div class="form-group">
-                        <label class="form-control-label" for="input-username">Select Beneficiary</label>
-                        <select class ="form-control selectpicker" name="r_account_no" id=""data-live-search="true" placeholder= "Select Beneficiary" class="form-control">
-                                        @foreach ($bens as $ben)
-                                        <option value="">Select</option>
-                                        <option value="{{$ben->ben_name}}">{{$ben->ben_name}}</option>
-                                        @endforeach
-                                    </select>
-                      </div>
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-username">Old Password</label>
+                            <input type="password" required name="old_password" id="subject" class="form-control" placeholder="Enter Subject">
+                        </div>
                     </div>
+
                     <div class="col-lg-6">
-                      <div class="form-group">
-                        <label class="form-control-label" for="input-email">Amount</label>
-                        <input type="number" name="amount" id="amount" class="form-control" placeholder="Ex 100">
-                        <span class="heading-small text-muted ">MIN 100 | MAX 1,000,000.00</span>
-                      </div>
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-username">New Password</label>
+                            <input type="password" required name="new_password" id="subject" class="form-control" placeholder="Enter Subject">
+                        </div>
                     </div>
-                  </div>
 
 
 
-
-                  <div class="row">
+                <div class="row">
                     <div class="col-lg-6">
-                      <div class="form-group">
-                        <label class="form-control-label" for="input-email">Narration</label>
-                        <input type="text" name="note" id="note" class="form-control" placeholder="Enter Narration">
-                      </div>
-                    </div>
-                    <div class="col-lg-6 ">
-                      <div class="form-group">
-                        <label class="form-control-label" for="input-email">Transfer pin</label>
-                        <input type="password" name="user_pin" id="note" class="form-control" placeholder="Enter your trnasfer pin">
-                      </div>
-                    </div>
-             
-                    </div>
-                  </div>
-
-
-                  <div class="row">
-                 
-                    <div class="col-lg-6 ">
-                    <div class="form-group">
-                    <button class="btn btn-icon btn-primary mt-1" type="submit" id="submit" name="submit">
-                        <span class="btn-inner--icon"><i class="ni ni-send"></i></span>
-                        <span class="btn-inner--text">Continue</span>
-                      </button>
-                      </div>
-             
-                    </div>
-                  </div>
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-username">Old Password</label>
+                            <input type="password" required name="old_password" id="subject" class="form-control" placeholder="Enter Subject">
+                        </div>
                 </div>
 
-              </form>
+                        <div class="col-lg-6 ">
+                            <div class="form-group">
+                                <button class="btn btn-icon btn-primary mt-1" type="submit" id="submit" name="submit">
+                                    <span class="btn-inner--icon"><i class="ni ni-send"></i></span>
+                                    <span class="btn-inner--text">Reset Password</span>
+                                </button>
+                            </div>
+                        </div>
+                
+                </div>
+            
+            
+            <div>
+
+
+                 
+
+                    
+              
+
+
+
+                 
+                
+          
+                  
+                                          <p>If you need any help click on the  whatsapp chat icon below.</p>
+
+              
+
+
+              
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
 
 
                 
@@ -229,8 +248,39 @@
       
 
 
+      <style>
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+        </style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=+447466588558&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
 
 
 
 @endsection
+
+
+
+
+

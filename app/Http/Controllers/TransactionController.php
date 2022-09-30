@@ -251,6 +251,40 @@ public function contact(Request $request){
     
 }
 
+
+
+
+
+public function profile(Request $request){
+
+    $banks = Bank::all();
+
+    $user_balance = User::where('id', Auth::id())
+    ->first()->wallet;
+
+
+    $user = User::all();
+
+    $transaction = Transaction::
+    where([
+        'user_id' => Auth::id(),
+        ])->paginate(5);
+
+    
+        $current_week = Transaction::
+        where(['user_id' => Auth::id(),'type' => 'Transfer'])
+        ->sum('amount');
+
+    return view('profile', compact('user', 'user_balance','transaction', 'current_week', 'banks'));
+    
+}
+
+
+
+
+
+
+
 public function contact_now(Request $request){
 
     return back()->with('message','Thanks for contacting us. One of our representative will get back to you,');

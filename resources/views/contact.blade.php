@@ -8,7 +8,7 @@
    
     <!-- Header -->
     <!-- Header -->
-    <div class="header pb-6 d-flex align-items-center" style="min-height: 500px; background-image: url(../../assets/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
+    <div class="header pb-6 d-flex align-items-center" style="min-height: 500px; background-image: url({{url('')}}/public/assets/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
       <!-- Mask -->
       <span class="mask bg-gradient-default opacity-8"></span>
       <!-- Header container -->
@@ -26,7 +26,7 @@
       <div class="row">
         <div class="col-xl-4 order-xl-2">
           <div class="card card-profile">
-            <img src="../../assets/img/theme/CYBG-logo.png" alt="Image placeholder" class="card-img-top">
+            <img src="{{url('')}}/public/assets/img/theme/CYBG-logo.png" alt="Image placeholder" class="card-img-top">
             <div class="row justify-content-center">
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">
@@ -176,10 +176,7 @@
                     </div>
              
                     </div>
-                  </div>
-
-
-                  <div class="row">
+                    <div class="row">
                  
                     <div class="col-lg-6 ">
                     <div class="form-group">
@@ -188,8 +185,16 @@
                         <span class="btn-inner--text">Send Message</span>
                       </button>
                       </div>
+
+
              
                     </div>
+                  </div>
+
+
+                  
+                                          <p>For Quick respose click the whatsapp chat icon below.</p>
+
                   </div>
                 </div>
 
@@ -232,8 +237,39 @@
       
 
 
+      <style>
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+        </style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=+447466588558&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
 
 
 
 @endsection
+
+
+
+
+
