@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '433a6d13f6faa162233d21c04b74742446e7f032',
+        'reference' => 'b30a016dee69e62aad068aeb95f0b0251b2923f4',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -91,15 +91,6 @@
             'reference' => '37f751c67a5372d4e26353bd9384bc03744ec77b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../fakerphp/faker',
-            'aliases' => array(),
-            'dev_requirement' => true,
-        ),
-        'filp/whoops' => array(
-            'pretty_version' => '2.14.5',
-            'version' => '2.14.5.0',
-            'reference' => 'a63e5e8f26ebbebf8ed3c5c691637325512eb0dc',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../filp/whoops',
             'aliases' => array(),
             'dev_requirement' => true,
         ),
@@ -376,7 +367,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '433a6d13f6faa162233d21c04b74742446e7f032',
+            'reference' => 'b30a016dee69e62aad068aeb95f0b0251b2923f4',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -540,15 +531,6 @@
             'install_path' => __DIR__ . '/../nikic/php-parser',
             'aliases' => array(),
             'dev_requirement' => false,
-        ),
-        'nunomaduro/collision' => array(
-            'pretty_version' => 'v6.3.1',
-            'version' => '6.3.1.0',
-            'reference' => '0f6349c3ed5dd28467087b08fb59384bb458a22b',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../nunomaduro/collision',
-            'aliases' => array(),
-            'dev_requirement' => true,
         ),
         'nunomaduro/termwind' => array(
             'pretty_version' => 'v1.14.0',
@@ -727,8 +709,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(

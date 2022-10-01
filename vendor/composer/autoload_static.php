@@ -10,8 +10,8 @@ class ComposerStaticInit849335330d4c47f03f23457360433de3
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
@@ -48,7 +48,6 @@ class ComposerStaticInit849335330d4c47f03f23457360433de3
         ),
         'W' => 
         array (
-            'Whoops\\' => 7,
             'Webmozart\\Assert\\' => 17,
         ),
         'T' => 
@@ -110,7 +109,6 @@ class ComposerStaticInit849335330d4c47f03f23457360433de3
         ),
         'N' => 
         array (
-            'NunoMaduro\\Collision\\' => 21,
             'Nicolaslopezj\\Searchable\\' => 25,
         ),
         'M' => 
@@ -184,10 +182,6 @@ class ComposerStaticInit849335330d4c47f03f23457360433de3
         'Yajra\\DataTables\\' => 
         array (
             0 => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src',
-        ),
-        'Whoops\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -373,10 +367,6 @@ class ComposerStaticInit849335330d4c47f03f23457360433de3
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
-        ),
-        'NunoMaduro\\Collision\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
         ),
         'Nicolaslopezj\\Searchable\\' => 
         array (
@@ -3312,38 +3302,6 @@ class ComposerStaticInit849335330d4c47f03f23457360433de3
         'Nette\\Utils\\Validators' => __DIR__ . '/..' . '/nette/utils/src/Utils/Validators.php',
         'Nicolaslopezj\\Searchable\\SearchableTrait' => __DIR__ . '/..' . '/nicolaslopezj/searchable/src/SearchableTrait.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
-        'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/CollisionServiceProvider.php',
-        'NunoMaduro\\Collision\\Adapters\\Laravel\\Commands\\TestCommand' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/Commands/TestCommand.php',
-        'NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php',
-        'NunoMaduro\\Collision\\Adapters\\Laravel\\Exceptions\\RequirementsException' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/Exceptions/RequirementsException.php',
-        'NunoMaduro\\Collision\\Adapters\\Laravel\\IgnitionSolutionsRepository' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php',
-        'NunoMaduro\\Collision\\Adapters\\Laravel\\Inspector' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Laravel/Inspector.php',
-        'NunoMaduro\\Collision\\Adapters\\Phpunit\\ConfigureIO' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/ConfigureIO.php',
-        'NunoMaduro\\Collision\\Adapters\\Phpunit\\Printer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Printer.php',
-        'NunoMaduro\\Collision\\Adapters\\Phpunit\\State' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/State.php',
-        'NunoMaduro\\Collision\\Adapters\\Phpunit\\Style' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Style.php',
-        'NunoMaduro\\Collision\\Adapters\\Phpunit\\TestResult' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/TestResult.php',
-        'NunoMaduro\\Collision\\Adapters\\Phpunit\\Timer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Timer.php',
-        'NunoMaduro\\Collision\\ArgumentFormatter' => __DIR__ . '/..' . '/nunomaduro/collision/src/ArgumentFormatter.php',
-        'NunoMaduro\\Collision\\ConsoleColor' => __DIR__ . '/..' . '/nunomaduro/collision/src/ConsoleColor.php',
-        'NunoMaduro\\Collision\\Contracts\\Adapters\\Phpunit\\HasPrintableTestCaseName' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/Adapters/Phpunit/HasPrintableTestCaseName.php',
-        'NunoMaduro\\Collision\\Contracts\\Adapters\\Phpunit\\Listener' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/Adapters/Phpunit/Listener.php',
-        'NunoMaduro\\Collision\\Contracts\\ArgumentFormatter' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/ArgumentFormatter.php',
-        'NunoMaduro\\Collision\\Contracts\\Handler' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/Handler.php',
-        'NunoMaduro\\Collision\\Contracts\\Highlighter' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/Highlighter.php',
-        'NunoMaduro\\Collision\\Contracts\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/Provider.php',
-        'NunoMaduro\\Collision\\Contracts\\RenderlessEditor' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/RenderlessEditor.php',
-        'NunoMaduro\\Collision\\Contracts\\RenderlessTrace' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/RenderlessTrace.php',
-        'NunoMaduro\\Collision\\Contracts\\SolutionsRepository' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/SolutionsRepository.php',
-        'NunoMaduro\\Collision\\Contracts\\Writer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Contracts/Writer.php',
-        'NunoMaduro\\Collision\\Coverage' => __DIR__ . '/..' . '/nunomaduro/collision/src/Coverage.php',
-        'NunoMaduro\\Collision\\Exceptions\\InvalidStyleException' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/InvalidStyleException.php',
-        'NunoMaduro\\Collision\\Exceptions\\ShouldNotHappen' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/ShouldNotHappen.php',
-        'NunoMaduro\\Collision\\Handler' => __DIR__ . '/..' . '/nunomaduro/collision/src/Handler.php',
-        'NunoMaduro\\Collision\\Highlighter' => __DIR__ . '/..' . '/nunomaduro/collision/src/Highlighter.php',
-        'NunoMaduro\\Collision\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Provider.php',
-        'NunoMaduro\\Collision\\SolutionsRepositories\\NullSolutionsRepository' => __DIR__ . '/..' . '/nunomaduro/collision/src/SolutionsRepositories/NullSolutionsRepository.php',
-        'NunoMaduro\\Collision\\Writer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Writer.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -5660,24 +5618,6 @@ class ComposerStaticInit849335330d4c47f03f23457360433de3
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\Assert\\InvalidArgumentException' => __DIR__ . '/..' . '/webmozart/assert/src/InvalidArgumentException.php',
         'Webmozart\\Assert\\Mixin' => __DIR__ . '/..' . '/webmozart/assert/src/Mixin.php',
-        'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
-        'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
-        'Whoops\\Exception\\Frame' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Frame.php',
-        'Whoops\\Exception\\FrameCollection' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/FrameCollection.php',
-        'Whoops\\Exception\\Inspector' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Inspector.php',
-        'Whoops\\Handler\\CallbackHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/CallbackHandler.php',
-        'Whoops\\Handler\\Handler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/Handler.php',
-        'Whoops\\Handler\\HandlerInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/HandlerInterface.php',
-        'Whoops\\Handler\\JsonResponseHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/JsonResponseHandler.php',
-        'Whoops\\Handler\\PlainTextHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/PlainTextHandler.php',
-        'Whoops\\Handler\\PrettyPageHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php',
-        'Whoops\\Handler\\XmlResponseHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php',
-        'Whoops\\Run' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Run.php',
-        'Whoops\\RunInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/RunInterface.php',
-        'Whoops\\Util\\HtmlDumperOutput' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/HtmlDumperOutput.php',
-        'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
-        'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
-        'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
         'Yajra\\DataTables\\CollectionDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/CollectionDataTable.php',
         'Yajra\\DataTables\\Contracts\\DataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Contracts/DataTable.php',
         'Yajra\\DataTables\\Contracts\\Formatter' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Contracts/Formatter.php',
