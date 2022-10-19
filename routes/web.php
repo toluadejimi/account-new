@@ -82,9 +82,6 @@ Route::group(['middleware' => ['auth']], function()
     Route::post('pin-request', [AuthenticatedSessionController::class,'pin_request']);
 
 
-    Route::get('profile', [TransactionController::class,'profile']);
-    Route::post('update-profile', [TransactionController::class,'update_prifule']);
-
 
 
     //Dashboard
@@ -100,6 +97,11 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('other-transfer', [TransactionController::class,'other_transfer']);
     Route::post('int-transfer-now', [TransactionController::class,'int_transfer_now']);
     Route::get('int-transfer', [TransactionController::class,'int_transfer']);
+    Route::get('change-password', [DashboardController::class,'change_password']);
+    Route::post('change-password-now', [DashboardController::class,'change_password_now']);
+
+
+
 
     Route::get('statement', [TransactionController::class,'statement']);
     Route::post('get-statement', [TransactionController::class,'get_statement']);
@@ -111,13 +113,13 @@ Route::group(['middleware' => ['auth']], function()
     Route::get('contact', [TransactionController::class,'contact']);
     Route::post('contact-now', [TransactionController::class,'contact_now']);
 
-    
 
 
 
-    
 
-    
+
+
+
 
     //Transaction Table
     Route::get('transaction', [TransactionController::class,'transactions']);
@@ -130,7 +132,7 @@ Route::group(['middleware' => ['auth']], function()
 
 
 
-    
+
 
 
 });

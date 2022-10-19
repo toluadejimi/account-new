@@ -64,7 +64,7 @@
                 <i class="ni ni-shop text-primary"></i>
                 <span class="nav-link-text">Dashboards</span>
               </a>
-            
+
             </li>
 
             <li class="nav-item">
@@ -86,9 +86,9 @@
                 </ul>
               </div>
             </li>
-            
-            
-            
+
+
+
             <li class="nav-item">
               <a class="nav-link" href="/statement">
                 <i class="ni ni-archive-2 text-green"></i>
@@ -121,7 +121,7 @@
           <li class="nav-item">
          <span> </span>
             </li>
-            
+
           </ul>
         </div>
       </div>
@@ -134,7 +134,7 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Search form -->
-         
+
           <!-- Navbar links -->
           <ul class="navbar-nav align-items-center ml-md-auto">
             <li class="nav-item d-xl-none">
@@ -147,7 +147,7 @@
                 </div>
               </div>
             </li>
-            
+
 
                    </ul>
           <ul class="navbar-nav align-items-center ml-auto ml-md-0">
@@ -155,7 +155,7 @@
               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="media align-items-center">
                   <span class="avatar avatar-sm rounded-circle">
-                    <img alt="Image placeholder" src="{{url('')}}/public/assets/img/theme/team-4.jpg">
+                    <img alt="Image placeholder" src="{{url('')}}/public/assets/img/theme/img-1-1000x600.jpg">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
                     <span class="mb-0 text-sm  font-weight-bold">{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</span>
@@ -166,11 +166,11 @@
                 <div class="dropdown-header noti-title">
                   <h6 class="text-overflow m-0">Welcome!</h6>
                 </div>
-                <a href="#!" class="dropdown-item">
+                <a href="/change-password" class="dropdown-item">
                   <i class="ni ni-single-02"></i>
                   <span>My profile</span>
                 </a>
-    
+
                 <div class="dropdown-divider"></div>
                 <a href="/logout" class="dropdown-item">
                   <i class="ni ni-user-run"></i>
@@ -190,10 +190,10 @@
         <div class="header-body">
           <div class="row align-items-center py-4">
             <div class="col-lg-6 col-7">
-              <h6 class="h2 text-white d-inline-block mb-0">Welcome {{Auth::user()->first_name}}</h6> 
-              
+              <h6 class="h2 text-white d-inline-block mb-0">Welcome {{Auth::user()->first_name}}</h6>
+
             </div>
-           
+
           </div>
           <!-- Card stats -->
           <div class="row">
@@ -296,12 +296,12 @@
                   <h5 class="h3 text-black mb-0">Recent Transactions</h5>
                 </div>
                 <div class="col">
-                  
+
                 </div>
               </div>
             </div>
             <div class="card-body">
-              
+
             <div class="card">
                   <div class="table-responsive">
                     <table class="table">
@@ -322,38 +322,38 @@
                                             <td>{{$item->trx_id}}</td>
                                             <td>{{$item->type}}</td>
                                             <td>{{number_format($item->amount, 2)}}</td>
-                                            @if($item->status == "0")         
-                                            <td><span class="badge rounded-pill bg-warning text-dark">Pending</span></td>         
+                                            @if($item->status == "0")
+                                            <td><span class="badge rounded-pill bg-warning text-dark">Pending</span></td>
                                             @elseif($item->status == "1")
-                                            <td><span class="badge rounded-pill bg-success">Success</span></td>   
+                                            <td><span class="badge rounded-pill bg-success">Success</span></td>
                                             @else
-                                            <td><span class="badge rounded-pill bg-danger">Rejected</span></td>       
+                                            <td><span class="badge rounded-pill bg-danger">Rejected</span></td>
                                             @endif
                                             <td>{{date('F d, Y', strtotime($item->created_at))}}</td>
-                                            <td>{{date('h:i:s A', strtotime($item->created_at))}}</td>  
+                                            <td>{{date('h:i:s A', strtotime($item->created_at))}}</td>
 
                                         </tr>
                                         @empty
                                             <tr colspan="20" class="text-center">No Record Found</tr>
                                         @endforelse
-                
+
                                     </tbody>
                                 </table>
                                 </div>
                             </div>
-             
-                      
+
+
 
 
 
             </div>
           </div>
         </div>
-       
+
       </div>
-      
-      
-      
+
+
+
       <!-- Footer -->
       <footer class="footer pt-0">
         <div class="row align-items-center justify-content-lg-between">
@@ -362,7 +362,7 @@
               &copy; 2022 <a href="#" class="font-weight-bold ml-1" target="_blank">Clydesdale Bank</a>
             </div>
           </div>
-          
+
         </div>
       </footer>
     </div>

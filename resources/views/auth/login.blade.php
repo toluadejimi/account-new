@@ -42,7 +42,7 @@
                                         {{ session()->get('error') }}
                                     </div>
                                 @endif
-      
+
 
                 <h6 class="font-weight-light">Sign in to continue.</h6>
                 <form method="POST" action="/sign-in" class="pt-3">
@@ -51,7 +51,7 @@
               <form action="#!">
                   <div class="form-group">
                     <label for="number" class="sr-only">Account Number</label>
-                    <input type="number" name="account_no" id="number" class="form-control" placeholder="Email your account number">
+                    <input type="number" name="account_no" id="number" class="form-control" placeholder="Enter your account number">
                   </div>
                   <div class="form-group mb-4">
                     <label for="password" class="sr-only">Password</label>
@@ -86,7 +86,7 @@
               <div class="custom-control custom-checkbox login-card-check-box">
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Remember me</label>
-              </div>              
+              </div>
               <a href="#!" class="text-reset">Forgot password?</a>
             </div>
             <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
